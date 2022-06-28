@@ -1,0 +1,16 @@
+1/ ******************************************
+ //Url for install python: https:https://www.python.org/ftp/python/3.10.5/python-3.10.5-amd64.exe
+
+2/ ******************************************
+ //Url for install pip: https://phoenixnap.com/kb/install-pip-windows
+ //Download file pip data
+	curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+
+ //Install pip from file
+	python get-pip.py
+
+3/ ******************************************
+ //Url from install pyserial: https://pyserial.readthedocs.io/en/latest/pyserial.html
+ //Install pyserial
+	python -m pip install pyserial
+
