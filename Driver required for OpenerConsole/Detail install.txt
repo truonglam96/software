@@ -1,7 +1,9 @@
 1/ ******************************************
+ //Install python
  //Url for install python: https:https://www.python.org/ftp/python/3.10.5/python-3.10.5-amd64.exe
 
 2/ ******************************************
+ //Install pip
  //Url for install pip: https://phoenixnap.com/kb/install-pip-windows
  //Download file pip data
 	curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
@@ -10,7 +12,25 @@
 	python get-pip.py
 
 3/ ******************************************
- //Url from install pyserial: https://pyserial.readthedocs.io/en/latest/pyserial.html
+ //Install pyserial
+ //Url for install pyserial: https://pyserial.readthedocs.io/en/latest/pyserial.html
  //Install pyserial
 	python -m pip install pyserial
+	
+4/ ******************************************
+ //Install crytography
+ //Url from install crytography: https://cryptography.io/en/latest/installation/
+ //Install Cryptography
+	pip install cryptography
 
+5/ ******************************************
+ //Install ecdsa
+ //Url for install ecdsa: https://pypi.org/project/ecdsa/
+ //Install ecdsa
+	pip install ecdsa
+	
+6/ ******************************************
+ //Install pyaes
+ //Url for install pyaes: https://pypi.org/project/pyaes/
+ //Install pyaes
+	pip install pyaes
