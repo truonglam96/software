@@ -1,0 +1,9 @@
+1. Install python
+//URL: https://docs.python-guide.org/starting/install3/linux/
+  sudo apt-get install python3.6
+2. Install pip3
+//URL: https://www.educative.io/answers/installing-pip3-in-ubuntu
+  sudo apt-get -y install python3-pip
+3. Install pyserial
+//URL: https://pyserial.readthedocs.io/en/latest/pyserial.html
+   python3 -m pip install pyserial
