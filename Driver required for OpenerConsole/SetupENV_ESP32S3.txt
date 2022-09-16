@@ -1,0 +1,48 @@
+1: Install python, download and install
+ Option 1: Download and install with file exe
+ 	https:https://www.python.org/ftp/python/3.10.5/python-3.10.5-amd64.exe
+ Option 2: Run "python" in CMD then automatically direct to Store and get Python3
+
+2: Install pip, download file pip data and running file
+ //Run in CMD
+	curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+ //Run in CMD
+	python get-pip.py
+
+3: Install pyserial
+ //Run in CMD
+	python -m pip install pyserial
+	
+4: Install crytography
+ //Run in CMD
+	pip install cryptography
+
+5: Install ecdsa
+ //Run in CMD
+	pip install ecdsa
+	
+6: Install pyaes
+ //Run in CMD
+	pip install pyaes
+
+7: Install ESP-IDF Tools 4.4.2, download and install
+	https://dl.espressif.com/dl/idf-installer/esp-idf-tools-setup-offline-4.4.2.exe
+
+8: Run app "ESP-EDF 4.4 Powershell" then cd to folder source code FirmWare
+ //Run in Powershell check version 
+ 	idf.py --version 
+
+9: In the PowerShell window run the commands
+ - Fullclean:    
+	idf.py fullclean
+
+ - Build:    
+	idf.py build4
+
+ - Flash: COMx is port name of device in windows   
+	idf.py -p COMx flash
+
+ - Erase Flash:   
+	idf.py -p COMx erase-flash
+
+
