@@ -43,7 +43,7 @@
             justify-content: center;
             align-items: center;
             margin-top: -10px; /* Center text vertically */
-            color: black; /* Set text color to white */
+            color: black; /* Set text color to black */
             font-weight: bold; /* Make text bold */
             font-size: 16px; /* Adjust font size if needed */
         }
@@ -184,13 +184,30 @@
             // Show modal with the prize
             document.getElementById("modalMessage").innerText = `Congrats! You won prize ${prizeNumber}`;
             document.getElementById("getPrizeBtn").onclick = function() {
-                window.open(prizeURLs[prizeNumber], "_blank");
+                openInBrowser(prizeURLs[prizeNumber]);
             };
             document.getElementById("prizeModal").style.display = "flex"; // Show the modal
         }
 
         function closeModal() {
             document.getElementById("prizeModal").style.display = "none"; // Hide modal and return to spin
+        }
+
+        // Function to force opening the URL in the default browser
+        function openInBrowser(url) {
+            if (isInAppBrowser()) {
+                // Open using custom logic for in-app browsers
+                window.open(url, '_system'); // Tries to open in the system's default browser
+            } else {
+                // Open normally in the browser
+                window.location.href = url;
+            }
+        }
+
+        // Function to detect if the user is in an in-app browser (Facebook, Messenger, Zalo, etc.)
+        function isInAppBrowser() {
+            const ua = navigator.userAgent || navigator.vendor || window.opera;
+            return (ua.indexOf('FBAN') > -1) || (ua.indexOf('FBAV') > -1) || (ua.indexOf('Line') > -1) || (ua.indexOf('Zalo') > -1);
         }
     </script>
 </body>
